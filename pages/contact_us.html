@@ -3,43 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <title>TravelBloom - Contact Us</title>
 </head>
-<body>
-  <header>
-    <div>
-      <img src="./assets/icons/plane.png" alt="planeIcon">
-      <h1>TravelBloom</h1>
+<body class="font-web">
+  <header class="menu-nav menu-nav--background">
+    <div class="menu-nav">
+      <img src="../assets/icons/icons8-plane-64.png" width="48px" height="48px" alt="planeIcon">
+      <h1 class="title title__1">TravelBloom</h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="./travel_recommendation.html">Home</a></li>
-        <li><a href="./pages/about_us.html">About Us</a></li>
-        <li><a href="./pages/contact_us.html">Contact Us</a></li>
+      <ul class="menu-nav menu-nav--list menu-nav--font font-web">
+        <li><a href="../travel_recommendation.html">Home</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <aside>
-      <img src="#" alt="twitterIcon">
-      <img src="#" alt="facebookIcon">
-      <img src="#" alt="instagramIcon">
-      <img src="#" alt="youtubeIcon">
+  <main class="main-web main-web--about">
+    <aside class="container container__aside">
+      <div class="line"></div>
+      <div class="container container__aside">
+        <img class="icon" src="../assets/icons/bxl-twitter.svg" alt="twitterIcon">
+        <img class="icon" src="../assets/icons/bxl-facebook.svg" alt="facebookIcon">
+        <img class="icon" src="../assets/icons/bxl-instagram.svg" alt="instagramIcon">
+        <img class="icon" src="../assets/icons/bxl-youtube.svg" alt="youtubeIcon">
+      </div>
     </aside>
-    <article>
+    <article class="container container__section">
       <header>
-        <h2>CONTACT US</h2>
-        <p>Get in touch</p>
+        <h2 class="title title__2">CONTACT US</h2>
+        <p class="container container--box">Get in touch</p>
       </header>
       <section>
-        <form action="#" method="post" name="contact_form" id="contactForm">
-          <label for="name_text">Name</label>
-          <input type="text" name="name_text" id="nameText" placeholder="Enter your name">
-          <label for="email_text" placeholder="Enter your mail">Email</label>
-          <input type="email" name="email_text" id="emailText">
-          <label for="message_textarea">Message</label>
-          <textarea name="message_textarea" id="messageTextarea" placeholder="Enter your message" cols="50" rows="10" maxlength="500"></textarea>
-          <input type="submit" id="contactFormSubmit" value="Submit">
+        <form action="#" method="post" name="contact_form" id="contactForm" class="container container__article container--color-nav container__form font-web__18">
+          <label for="nameText" >Name</label>
+          <input type="text" class="form-input" name="name_text" id="nameText" placeholder="Enter your name">
+          <label for="emailText" placeholder="Enter your mail">Email</label>
+          <input type="email" class="form-input" name="email_text" id="emailText" placeholder="Enter your email">
+          <label for="messageTextarea">Message</label>
+          <textarea class="form-input" name="message_textarea" id="messageTextarea" placeholder="Enter your message" cols="50" rows="10" maxlength="500"></textarea>
+          <input class="button button--cyan font-web" type="submit" id="contactFormSubmit" value="Submit">
         </form>
       </section>
     </article>

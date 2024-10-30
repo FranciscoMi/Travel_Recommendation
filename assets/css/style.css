@@ -5,8 +5,9 @@
   --webfont: sans-serif;
   --titlecolor:white;
   --menucolor:white;
-  --background-color-nav:rgba(48,54,54,75%);
+  --background-color-nav:rgba(48,54,54,60%);
   --widthBoxSearch:100%;
+  --cyancolor:#017577;
 }
 
 *{
@@ -37,32 +38,67 @@ a:hover{
   color: #3498db;
 }
 
-.article-container{
+.container{
   display: flex;
   flex-direction: column;
   gap:3rem;
+  padding: 1rem;
+}
+
+.container__article{
   padding-left: 2rem;
 }
 
-.article-container--box{
-  font-size: 1.25em;
+.container__form{
+  gap:1rem;
+}
+
+.container__section{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items:center;
+}
+
+.container--color-nav{
   background-color: var(--background-color-nav);
+}
+
+.container--box{
+  font-size: 1.25em;
   line-height: 1.5;
-  padding: 1rem;
   width: 75%;
 }
 
-.aside-container{
-  display: flex;
-  flex-direction: column;
+.container__aside{
   padding-top: 10vh;
   gap:1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button-web{
-  background-color: #017577;
+.button{
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  font-weight: bolder;
+  text-align: center;
+  color:var(--menucolor);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover{
+  color: var(--cyancolor);
+  background-color: var(--menucolor);
+}
+
+.button--blue{
+  background-color: rgb(56, 56, 180);
+  border: 1px solid gray;
+}
+
+.button--cyan{
+  background-color: var(--cyancolor);
   border-style: none;
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
@@ -77,6 +113,15 @@ a:hover{
 
 .font-web__18{
   font-size: 18px;
+}
+
+.form-input{
+background-color: transparent;
+border: 1px solid white;
+color:var(--webcolor);
+font-size: 18px;
+padding: 0.5rem;
+border-radius: 0.5rem;
 }
 
 .icon{
@@ -96,7 +141,10 @@ a:hover{
   display: grid;
   grid-template-columns: 1fr 4fr 6fr;
   gap:10px;
-  align-items:center;
+}
+
+.main-web--about{
+  grid-template-columns: 1fr 9fr 1fr;
 }
 
 .menu-nav{
@@ -144,16 +192,20 @@ a:hover{
 
 .title{
   color: var(--titlecolor);
+  font-weight: bolder;
 }
 
 .title__1{
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-weight: bolder;
   font-size: 1.5rem;
 }
 
 .title__2{
   font-size: 5.5rem;
   font-weight: bolder;
+}
+
+.title__3{
+  font-size: 3rem;
 }
