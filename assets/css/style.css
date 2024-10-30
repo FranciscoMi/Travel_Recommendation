@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+:root{
+  --webcolor:white;
+  --webfont: sans-serif;
+  --titlecolor:white;
+  --menucolor:white;
+  --background-color-nav:rgba(48,54,54,75%);
+  --widthBoxSearch:100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body, h1,h2{
+  margin:0;
+}
+
+body{
+  background-image: url(../images/andre-benz-CR0E20Of7yU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:var(--menucolor);
+  transition:color 0.3s ease;
+}
+
+a:hover{
+  color: #3498db;
+}
+
+.article-container{
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  padding-left: 2rem;
+}
+
+.article-container--box{
+  font-size: 1.25em;
+  background-color: var(--background-color-nav);
+  line-height: 1.5;
+  padding: 1rem;
+  width: 75%;
+}
+
+.aside-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  gap:1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-web{
+  background-color: #017577;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  font-weight: bolder;
+}
+
+.font-web{
+  font-family:var(--webfont);
+  color:var(--webcolor);
+  font-size: 16px;
+}
+
+.font-web__18{
+  font-size: 18px;
+}
+
+.icon{
+  width:48px;
+  filter:invert(1);
+}
+
+.line{
+  height:40vh;
+  width: 2px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-web{
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr;
+  gap:10px;
+  align-items:center;
+}
+
+.menu-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.5rem;
+  gap: 0 1.5rem;
+  text-align: center;
+}
+
+.menu-nav--background{
+  background-color:var(--background-color-nav)
+}
+
+.menu-nav--font{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-nav--list{
+  list-style-type: none;
+}
+
+
+.search-box{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap:0 0.5rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: calc(0.5rem * 3);
+  max-width: var(--widthBoxSearch);
+}
+
+.search-box--searchinput{
+  width:min(230px);
+  font-family: var(--webfont);
+  color:darkcyan;
+  border-style: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.title{
+  color: var(--titlecolor);
+}
+
+.title__1{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.title__2{
+  font-size: 5.5rem;
+  font-weight: bolder;
+}
