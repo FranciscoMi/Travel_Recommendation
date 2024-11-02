@@ -36,3 +36,4 @@ JavaScript code to accept these keywords and variations the user will enter in t
 
 # Recommendations #
  - We fetch the details of the places recommend based on which keyword the user enters: beach, temple, or country. So that display the time in the recommend country.
+
