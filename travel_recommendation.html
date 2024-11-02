@@ -1,49 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>TravelBloom - Journeys to life</title>
-</head>
-<body class="font-web">
-  <header class="menu-nav menu-nav--background">
-    <div class="menu-nav">
-      <img src="assets/icons/icons8-plane-64.png" width="48px" height="48px" alt="planeIcon">
-      <h1 class="title title__1">TravelBloom</h1>
-    </div>
-    <nav>
-      <ul class="menu-nav menu-nav--list menu-nav--font font-web">
-        <li><a href="#">Home</a></li>
-        <li><a href="./pages/about_us.html">About Us</a></li>
-        <li><a href="./pages/contact_us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="search-box">
-      <input  id="searchInput" class="search-box--searchinput" type="search" placeholder="Enter a destination or Keyword">
-      <img src="assets/icons/search-regular-24.png" width="30px" alt="lensIcon">
-      <button id="searchBtn" class="button  button--cyan font-web">Search</button>
-      <button id="clearBtn" class="button button--cyan font-web">Clear</button>
-    </div>
-  </header>
-  <main class="main-web">
-    <aside class="container container__aside">
-      <div class="line"></div>
-      <div class="container container__aside">
-        <img class="icon" src="assets/icons/bxl-twitter.svg" alt="twitterIcon">
-        <img class="icon" src="assets/icons/bxl-facebook.svg" alt="facebookIcon">
-        <img class="icon" src="assets/icons/bxl-instagram.svg" alt="instagramIcon">
-        <img class="icon" src="assets/icons/bxl-youtube.svg" alt="youtubeIcon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>TravelBloom - Journeys to life</title>
+  </head>
+  <body class="font-web">
+    <header class="menu-nav menu-nav--background">
+      <div class="menu-nav">
+        <img
+          src="assets/icons/icons8-plane-64.png"
+          width="48px"
+          height="48px"
+          alt="planeIcon"
+        />
+        <h1 class="title title__1">TravelBloom</h1>
       </div>
-    </aside>
-    <article class="container container__article">
-      <div><h2 class="title title__2">EXPLORE DREAM DESTINATION</h2></div>
-      <div class="container container--box container--color-nav">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder</div>
-      <div><button class="button button--cyan font-web font-web__18">BOOK NOW</button></div>
-    </article>
-    <article class="article-container" id="findBoxer"></article>
-  </main>
-  <script src="./assets/js/travel_recommendation.js"></script>
-</body>
+      <nav>
+        <ul class="menu-nav menu-nav--list menu-nav--font font-web">
+          <li><a href="#">Home</a></li>
+          <li><a href="./pages/about_us.html">About Us</a></li>
+          <li><a href="./pages/contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <input
+          id="searchInput"
+          class="search-box--searchinput"
+          type="search"
+          placeholder="Enter a destination or Keyword"
+        />
+        <img
+          src="assets/icons/search-regular-24.png"
+          width="30px"
+          alt="lensIcon"
+        />
+        <button id="searchBtn" class="button button--cyan font-web">
+          Search
+        </button>
+        <button id="clearBtn" class="button button--cyan font-web">
+          Clear
+        </button>
+      </div>
+    </header>
+    <main class="main-web">
+      <aside class="container container__aside">
+        <div class="line"></div>
+        <div class="container container__aside">
+          <a href="https://x.com"
+            ><img
+              class="icon"
+              src="assets/icons/bxl-twitter.svg"
+              alt="twitterIcon"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img
+              class="icon"
+              src="assets/icons/bxl-facebook.svg"
+              alt="facebookIcon"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img
+              class="icon"
+              src="assets/icons/bxl-instagram.svg"
+              alt="instagramIcon"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img
+              class="icon"
+              src="assets/icons/bxl-youtube.svg"
+              alt="youtubeIcon"
+          /></a>
+        </div>
+      </aside>
+      <article class="container container__article">
+        <div><h2 class="title title__2">EXPLORE DREAM DESTINATION</h2></div>
+        <div class="container container--box container--color-nav">
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder
+        </div>
+        <div>
+          <a
+            class="button button--cyan font-web font-web__18"
+            href="./pages/contact_us.html"
+            >BOOK NOW</a
+          >
+        </div>
+      </article>
+      <article
+        class="container container__box main-web--right"
+        id="findBoxer"
+      ></article>
+    </main>
+    <script src="./assets/js/travel_recommendation.js"></script>
+  </body>
 </html>
