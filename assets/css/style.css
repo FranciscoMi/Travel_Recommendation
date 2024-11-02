@@ -28,6 +28,7 @@ body {
   font-size: 18px;
   height: 100vh;
   width: 100%;
+  min-width: 1045px;
 }
 
 a {
@@ -47,8 +48,9 @@ a:hover {
   align-content: flex-end;
   background-color: white;
   border-radius: 10px;
-  padding: 1rem;
-  width: 50%;
+  padding: 0.5rem;
+  /*min-width: 225px;*/
+  width: 25vw;
   color: var(--cyancolor);
   scroll-snap-align: start;
 }

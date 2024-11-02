@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearBtn = document.querySelector("#clearBtn");
   const findBoxer = document.querySelector("#findBoxer");
 
+  
   //Models
   const url = "./assets/json/travel_recommendation_api.json";
 
@@ -28,6 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function countryDate(zone, element, countryName){
+    const options = { timeZone: zone, hour12: false, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    setInterval(() => {
+      const time = new Date().toLocaleTimeString('en-US', options);
+      element.textContent = `${countryName} - ${time}`;
+    }, 1000);
+  }
+  
   /*
   Asyncronous Javascript
   */
@@ -60,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imageUrl: item.imageUrl,
             visitUrl: item.visitUrl,
             description: item.description,
+            dateZone: item.zone
           });
         }
         // Search into sub-levels if is an array (for example, `cities`)
@@ -93,8 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
       div.appendChild(img);
 
       const title = document.createElement("h3");
-      title.textContent = element.name;
+      title.textContent = `${element.name}`;
       div.appendChild(title);
+
+      countryDate(element.dateZone, title, element.name);
 
       const description = document.createElement("p");
       description.textContent = element.description;
